@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export default (day: number): string => {
-  const fileLocation = `${path.dirname("")}/days/${day}/input.txt`;
+  const fileLocation = `input.txt`;
   const fileContent = fs.readFileSync(fileLocation).toString();
 
   // a new line at the end kept being annoying
