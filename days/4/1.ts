@@ -7,9 +7,9 @@ const runner = async () => {
 
   const splitCards = splitByLine.map((line) => line.split("|"));
 
-  const winningNumbers = splitCards.map((cards, i) => cards[0].split(":")[1]);
+  const winningNumbers = splitCards.map((cards) => cards[0].split(":")[1]);
 
-  const givenNumbers = splitCards.map((cards, i) => cards[1]);
+  const givenNumbers = splitCards.map((cards) => cards[1]);
 
   for (let i = 0; i < winningNumbers.length; i++) {
     const winners = winningNumbers[i].split(" ").filter((n) => n);
@@ -25,7 +25,7 @@ const runner = async () => {
     });
   }
 
-  console.log(total);
+  console.log(total); // Not correct
 };
 
 runner();
